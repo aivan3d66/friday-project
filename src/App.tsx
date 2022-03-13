@@ -8,11 +8,12 @@ import {Error404} from "./components/Error404/Error404";
 import {PasswordInput} from "./components/PasswordInput/PasswordInput";
 import {PasswordRecovery} from "./components/PasswordRecovery/PasswordRecovery";
 import {Testing} from "./components/Testing/Testing";
+import {Navigation} from "./components/Navigation";
 
 function App() {
   return (
     <div className="App">
-      Main page
+      <Navigation/>
       <Routes>
         <Route
           path={ROUTE_PATH.AUTH}
