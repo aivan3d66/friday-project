@@ -7,6 +7,7 @@ import {Profile} from "./components/Profile/Profile";
 import {Error404} from "./components/Error404/Error404";
 import {PasswordInput} from "./components/PasswordInput/PasswordInput";
 import {PasswordRecovery} from "./components/PasswordRecovery/PasswordRecovery";
+import {Testing} from "./components/Testing/Testing";
 
 function App() {
   return (
@@ -32,6 +33,10 @@ function App() {
         <Route
           path={ROUTE_PATH.PASSWORD_RECOVERY}
           element={<PasswordRecovery/>}
+        />
+        <Route
+          path={ROUTE_PATH.TESTING}
+          element={<Testing/>}
         />
       </Routes>
     </div>
