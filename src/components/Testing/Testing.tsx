@@ -11,7 +11,7 @@ export const Testing = () => {
       width: "400px",
       margin: "20px auto",
     }}>
-      <SuperInputText/>
+      <SuperInputText placeholder={"Write here ..."}/>
       <SuperCheckbox onChange={() => alert("I'm changed")}/>
       <SuperButton onClick={() => alert('MORE!!!')}>
         Push me harder
