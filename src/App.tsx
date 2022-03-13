@@ -11,6 +11,7 @@ import {PasswordRecovery} from "./components/PasswordRecovery/PasswordRecovery";
 function App() {
   return (
     <div className="App">
+      Main page
       <Routes>
         <Route
           path={ROUTE_PATH.AUTH}
