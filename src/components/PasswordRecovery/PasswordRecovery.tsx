@@ -1,4 +1,4 @@
-export const Recovery = () => {
+export const PasswordRecovery = () => {
   return (
     <div>
       Recovery
