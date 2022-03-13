@@ -5,6 +5,7 @@ type RoutesType = {
   PASSWORD_INPUT: string,
   PASSWORD_RECOVERY: string,
   ERROR: string,
+  TESTING: string
 }
 
 export const ROUTE_PATH: RoutesType = {
@@ -14,4 +15,5 @@ export const ROUTE_PATH: RoutesType = {
   PASSWORD_INPUT: '/password-input',
   PASSWORD_RECOVERY: '/password-recovery',
   ERROR: '/error404',
+  TESTING: '/testing'
 }
