@@ -4,10 +4,18 @@ import SuperButton from "../common/SuperButton/SuperButton";
 
 export const Testing = () => {
   return (
-    <div>
+    <div style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      width: "400px",
+      margin: "20px auto",
+    }}>
       <SuperInputText/>
-      <SuperCheckbox/>
-      <SuperButton/>
+      <SuperCheckbox onChange={() => alert("I'm changed")}/>
+      <SuperButton onClick={() => alert('MORE!!!')}>
+        Push me harder
+      </SuperButton>
     </div>
   )
 }
