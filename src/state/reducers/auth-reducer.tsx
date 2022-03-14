@@ -1,5 +1,8 @@
+import {BaseThunksType, InferActionsTypes} from "../redux-store";
+
 type InitialStateType = typeof initialState;
-type ActionsTypes = any
+type ActionsTypes = InferActionsTypes<typeof actions>;
+type ThunkType = BaseThunksType<ActionsTypes>;
 
 const GET_AUTH = 'GET_AUTH';
 
@@ -17,7 +20,7 @@ export const authReducer = (state = initialState, action: ActionsTypes): Initial
   }
 }
 
-export const actions = {
+const actions = {
   getAuth: () => ({
     type: GET_AUTH,
     payload: {}
