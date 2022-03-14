@@ -2,13 +2,18 @@
   padding: 8px;
   margin: 0;
   border-radius: 2px;
-  border: 1px solid rgba(220, 220, 220, 1);
+  border: 2px solid rgba(220, 220, 220, 1);
   background-color: #ffffff;
   outline: none;
   transition: 0.3s;
 
   &:hover {
-    border: 1px solid rgba(0, 102, 255, 1);
+    border: 2px solid rgba(0, 102, 255, 1);
+  }
+
+  &:focus {
+    border: 2px solid rgba(0, 102, 255, 0);
+    border-bottom: 2px solid rgb(0, 51, 204);
   }
 }
 
