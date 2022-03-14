@@ -1,3 +1,14 @@
+html {
+  margin-right: calc(-1 * (100vw - 100%));
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .App {
   text-align: center;
 }
