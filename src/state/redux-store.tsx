@@ -2,10 +2,12 @@ import {Action, applyMiddleware, combineReducers, createStore} from "redux";
 import thunkMiddleware, { ThunkAction } from "redux-thunk";
 import {authReducer} from "./reducers/auth-reducer";
 import {registryReducer} from "./reducers/registry-reducer";
+import {passwordReducer} from "./reducers/password-reducer";
 
 const rootReducer = combineReducers({
   auth: authReducer,
   registry: registryReducer,
+  password: passwordReducer,
 });
 
 const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
